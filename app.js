@@ -37,6 +37,9 @@ function pesquisar() {
             </div>
             `;
         }
+   if (!resultados) {
+        resultados = "<b>Busca Não Encontrada</b>"
+    }
 
     }
 
