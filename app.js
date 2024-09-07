@@ -7,7 +7,7 @@ function pesquisar() {
 
     //se campoPesquisa for uma string sem nada :
 
-    if (!campoPesquisa) {
+    if (campoPesquisa == "") {
     section.innerHTML = "<b>Nenhum Resultado Encontrado</b>"
     
         return
@@ -36,13 +36,15 @@ function pesquisar() {
                 <b <p><a href="${dado.link}" target="_blank"> Mais informações</a></p></b>
             </div>
             `;
-        }
-   if (resultados = "") {
-        resultados = "<b>Busca Não Encontrada</b>"}
-			
-    } 
+        } 
+        
+    
 
     // Atribui a string com os resultados ao conteúdo HTML da seção
     section.innerHTML = resultados;
 }
 
+if(!resultados); {
+    resultados = "<b>Nenhum Resultado Encontrado</b>"
+}
+}
