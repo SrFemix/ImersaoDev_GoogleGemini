@@ -37,11 +37,10 @@ function pesquisar() {
             </div>
             `;
         }
-   if (!resultados) {
-        resultados = "<b>Busca Não Encontrada</b>"
-    }
-
-    }
+   if (resultados = "") {
+        resultados = "<b>Busca Não Encontrada</b>"}
+			
+    } 
 
     // Atribui a string com os resultados ao conteúdo HTML da seção
     section.innerHTML = resultados;
